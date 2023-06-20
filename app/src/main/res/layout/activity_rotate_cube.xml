@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RotateCube">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/rotateX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rotate X" />
+
+        <Button
+            android:id="@+id/rotateY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rotate Y" />
+
+        <Button
+            android:id="@+id/rotateZ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rotate Z" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/scaleUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scale Up" />
+
+        <Button
+            android:id="@+id/scaleDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scale Down" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/posX"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="+X" />
+        <Button
+            android:id="@+id/negX"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="-X" />
+        <Button
+            android:id="@+id/posY"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="+Y" />
+        <Button
+            android:id="@+id/negY"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="-Y" />
+        <Button
+            android:id="@+id/posZ"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="+Z" />
+        <Button
+            android:id="@+id/negZ"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="-Z" />
+    </LinearLayout>
+
+    <android.opengl.GLSurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
